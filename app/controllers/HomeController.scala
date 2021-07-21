@@ -21,4 +21,8 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def hello() = Action {
     Ok(views.html.hello())
   }
+
+  def helloWorld(name: String) = Action {
+    Ok(views.html.helloworld(name))
+  }
 }
